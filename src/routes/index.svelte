@@ -1,3 +1,6 @@
+<script>
+        import EventCard from "$lib/components/eventCard.svelte";
+</script>
 
 <svelte:head>
         <title>Knights Of Columbus, Corona</title>
@@ -14,7 +17,7 @@
                                         Upholding the principles of charity, unity, and faith.
                                 </h2>
                                 <button class="py-4 w-full text-2xl font-bold text-white rounded-lg bg-gold">
-                                        Learn More
+                                        Become a Knight
                                 </button>                  
                         </div>
 
@@ -24,6 +27,7 @@
                 </div>
 
         </section>
+        
         <section class="flex justify-center w-full md:px-16">
                 <div class="flex flex-wrap justify-between">
                         <div class="mb-5 w-full md:w-2/5 md:mb-0">
@@ -40,6 +44,26 @@
                         <div class="w-full md:w-2/5">
                                 <img src="bridge.jpg" alt="" class="w-full h-full rounded-lg shadow">
                         </div>               
+                </div>
+        </section>
+        
+        <section class="flex">
+                <div class="w-full bg-left rounded-lg">
+                        <h1 class="mb-8 text-4xl font-semibold"> 
+                                Impacting Corona
+                        </h1>
+                        <div>
+                                <div class="flex overflow-scroll rounded-lg">
+                                        <EventCard />
+                                        <EventCard /> 
+                                        <EventCard />
+                                        <EventCard /> 
+                                        <EventCard />
+                                        <EventCard /> 
+                                        <EventCard />
+                                        <EventCard />    
+                                </div>
+                        </div>
                 </div>
         </section>
 </div>
