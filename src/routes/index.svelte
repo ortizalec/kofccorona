@@ -1,7 +1,15 @@
-<h1 class="text-3xl font-bold underline">
-        Knights of Columbus, Corona
-</h1>
 
-<p>
-Lorem ipsum dolor, sit amet consectetur adipisicing elit. Exercitationem, ipsum voluptatum explicabo commodi cumque facilis. Sunt, nostrum cum illo rem, amet ab ea quasi ut, ad aliquam totam ullam quidem!
-</p>
+
+<div class="flex flex-col justify-center p-5">
+        <section>
+                <h1 class="text-4xl drop-shadow-md play">
+                        Welcome to Knights of Columbus, Corona Council #12345
+                </h1>
+        </section>
+</div>
+
+<style>
+        .play {
+                font-family: 'Playfair Display', serif;
+        }
+</style>
