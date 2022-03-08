@@ -8,7 +8,7 @@
 
 <Fabmenu />
 <!-- Header -->
-<div class=" shadow-md backdrop-blur-sm flex items-center px-4 justify-center lg:sticky lg:top-0" style="height: 8vh;">
+<div class=" shadow-md flex items-center px-4 justify-center lg:sticky lg:top-0 z-50 bg-white" style="height: 8vh;">
 	<div class=" ml-10">
 		<img src="https://nebula.wsimg.com/86d66f4678813362b9fa57636736313d?AccessKeyId=0C5EA33AD39F1008AC61&disposition=0&alloworigin=1" alt="KofC Corona" style="height: 5vh;">
 	</div>
@@ -38,6 +38,8 @@
 </div>
 
 <style>
+
+	@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600;1,700;1,800&display=swap');
 	:global(:root){
         /* Brand colors */
     }
