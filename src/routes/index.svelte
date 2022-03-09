@@ -22,7 +22,7 @@
                         </div>
 
                 </div>
-                <div class=" bg-[url(building.jpg)] bg-cover h-[50vh] md:h-[80vh] w-full md:w-1/2">
+                <div class="bg-cover h-[50vh] md:h-[80vh] w-full md:w-1/2 building">
                 </div>
 
         </section>
@@ -68,6 +68,9 @@
 </div>
 
 <style>
+        .building {
+                background-image: url('building.jpg');
+        }
         .play {
                 font-family: 'Playfair Display', serif;
         }
