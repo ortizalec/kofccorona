@@ -1,5 +1,7 @@
 <script>
         import EventCard from "$lib/components/eventCard.svelte";
+        import buildImg from "../../static/build.jpg";
+
 </script>
 
 <svelte:head>
@@ -22,7 +24,8 @@
                         </div>
 
                 </div>
-                <div class="bg-cover h-[50vh] md:h-[80vh] w-full md:w-1/2 bg-[url(building.jpg)]">
+                <div class="bg-cover h-[50vh] md:h-[80vh] w-full md:w-1/2">
+                        <img src={buildImg} alt="building" class="h-full">
                 </div>
 
         </section>
