@@ -22,7 +22,7 @@
                         </div>
 
                 </div>
-                <div class=" bg-[url('catholic-building.jpg')] 
+                <div class=" bg-[url(catholic-building.jpg)] 
                 bg-cover h-[50vh] md:h-[80vh] w-full md:w-1/2">
                 </div>
 
