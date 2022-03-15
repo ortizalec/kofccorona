@@ -1,6 +1,28 @@
+<script context="module" lang="ts">
+        import type { Load } from "@sveltejs/kit";
+        export const load: Load = async ({fetch}) => {
+            const res = await fetch("/events.json");
+            if (res.ok){
+                const todos: Todo[] = await res.json();
+                return {
+                    props: {
+                        todos
+                    }
+                }
+            }
+            const { message } = await res.json();
+            return {
+                error: new Error(message)
+            }
+        }
+    </script>
+
 <script>
         import EventCard from "$lib/components/eventCard.svelte";
         import buildImg from "../../static/build.jpg";
+        
+
+
 
 </script>
 
