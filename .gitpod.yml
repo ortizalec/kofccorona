@@ -4,6 +4,8 @@ tasks:
     command: |
       echo "Setting Environment Variable for gitpod users..."
       export HMR_HOST=`gp url 3000`
+      export SUPABASE_URL='https://jhqzljvjcipxdfkiudeg.supabase.co'
+      export SUPABASE_KEY='eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImpocXpsanZqY2lweGRma2l1ZGVnIiwicm9sZSI6ImFub24iLCJpYXQiOjE2NDczMDYxMjEsImV4cCI6MTk2Mjg4MjEyMX0.FVnnxluvdAzFOLjI3xe-2aG5BIvcvs2ZTrsf0YL4GNs'
       echo "Starting Dev Server..."
       npm run dev
 

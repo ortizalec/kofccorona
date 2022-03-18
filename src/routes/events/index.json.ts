@@ -1,4 +1,4 @@
-import { supabaseClient } from "src/supabase";
+import { supabaseClient } from "../../supabase";
  
 /** @type {import('./[id]').RequestHandler} */
 export async function get({ params }){

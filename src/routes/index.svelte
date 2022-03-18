@@ -1,29 +1,26 @@
 <script context="module" lang="ts">
-        import type { Load } from "@sveltejs/kit";
+import type { Load } from "@sveltejs/kit";
         export const load: Load = async ({fetch}) => {
-            const res = await fetch("/events.json");
-            if (res.ok){
-                const todos: Todo[] = await res.json();
-                return {
-                    props: {
-                        todos
-                    }
+                const res = await fetch("/events.json");
+                if (res.ok){
+                        const events = await res.json();
+                        return {
+                                props: {
+                                        events
+                                }
+                        }
                 }
-            }
-            const { message } = await res.json();
-            return {
-                error: new Error(message)
-            }
+                const { message } = await res.json();
+                return {
+                        error: new Error(message)
+                }
         }
-    </script>
+</script>
 
 <script>
         import EventCard from "$lib/components/eventCard.svelte";
         import buildImg from "../../static/build.jpg";
-        
-
-
-
+        export let events;
 </script>
 
 <svelte:head>
@@ -78,14 +75,10 @@
                         </h1>
                         <div>
                                 <div class="flex overflow-scroll rounded-lg">
-                                        <EventCard />
-                                        <EventCard /> 
-                                        <EventCard />
-                                        <EventCard /> 
-                                        <EventCard />
-                                        <EventCard /> 
-                                        <EventCard />
-                                        <EventCard />    
+                                        {#each events as event}
+                                                <EventCard /> 
+                                        {/each}
+
                                 </div>
                         </div>
                 </div>
